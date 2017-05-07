@@ -176,20 +176,11 @@ public class Tomato {
 				ripeTomato = new TomatoNode();
 				ripeTomato.setNode(row, column, 0);
 				queue.add(ripeTomato);
-			}
-
-		}
-
-		// System.out.println("익은 갯수 : " + queue.size());
-
-		for (int i = 0; i < tomatoBox.length * tomatoBox[0].length; i++) {
-			int row = i / tomatoBox[0].length; // 행
-			int column = i % tomatoBox[0].length; // 열
-			if (tomatoBox[row][column] == 1) {
 				riptCount++;
 			}
 
 		}
+
 
 		if (riptCount == n_size * m_size) {
 			totalDay = 0;
